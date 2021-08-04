@@ -18,10 +18,15 @@ from django.urls import path
 from rango import views
 from django.conf import settings
 from django.conf.urls.static import static
+from django.conf.urls import url
+
+app_name = 'rango'
 
 urlpatterns = [
     path('',views.index, name='index'),
     path('rango/about/',views.about, name='about'),
     path('rango/category/<slug:category_name_slug>/',views.show_category, name='show_category'),
+    path('rango/add_category/', views.add_category, name='add_category'),
+    path('rango/category/<slug:category_name_slug>/add_page/',views.add_page, name='add_page'),
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
