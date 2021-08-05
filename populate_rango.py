@@ -6,23 +6,27 @@ django.setup()
 from rango.models import Category, Page
 
 def populate():
-    python_pages=[
-        {'title': 'Offical Python Tutorial','url':'http://docs.python.org/3/tuorial/', 'views':'18',},
-        {'title': 'How to Think like a computer Scientist','url':'http://www.greenteapress.com/thinkpython/','views':'100',},
-        {'title': 'Learn python in 10 minutes','url':'http://www.korokithakis.net/tutorials/python/','views':'28',}]
+    manufacturer_pages=[
+        {'title': 'BMW','url':'https://www.carmodelslist.com/bmw/', 'views':'18',},
+        {'title': 'Daihatsu','url':'https://www.carmodelslist.com/daihatsu/','views':'100',},
+        {'title': 'JEEP','url':'https://www.carmodelslist.com/jeep/','views':'28',}]
 
-    django_pages=[
-        {'title':'Offical Django Tutorial','url':'https://www.docs.djangoproject.com/en.2.1/intro/tutorial101/','views':'18',},
-        {'title':'Django Rocks','url':'http://www.djangorocks.com/','views':'128',},
-        {'title':'How to tango with Django','url':'http://www.tangowithdjango.com/','views':'12',}
+    country_pages=[
+        {'title':'Australia','url':'https://www.carmodelslist.com/australia-car-brands/','views':'18',},
+        {'title':'United Kindgom','url':'https://www.carmodelslist.com/united-kingdom-car-brands/','views':'128',},
+        {'title':'United States','url':'https://www.carmodelslist.com/united-states-car-brands/','views':'12',}
     ]
 
     other_pages=[
-        {'title':'Bottle','url':'http://bottlepy.org/docs/dev/','views':'108',},
-        {'title':'Flask','url':'http://flask.pocoo.org','views':'208',}
+        {'title':'Cars Movie','url':'https://www.imdb.com/title/tt0317219/','views':'108',},
+        {'title':'Forza Horizon game','url':'https://forzamotorsport.net/en-US/games/fh','views':'208',}
     ]
 
-    cats = {'Python':{'pages': python_pages , 'views':'128', 'likes':'64'}, 'Django':{'pages': django_pages , 'views':'64', 'likes':'32'},'Other Frameworks':{'pages':other_pages, 'views':'32', 'likes':'16'}}
+    cats = {
+        'Manufacturer':{'pages': manufacturer_pages , 'views':'128', 'likes':'64'}, 
+        'Brands by country':{'pages': country_pages , 'views':'64', 'likes':'32'},
+        'Other Frameworks':{'pages':other_pages, 'views':'32', 'likes':'16'}
+        }
 
     for cat, cat_data in cats.items():
         c = add_cat(cat, cat_data['views'], cat_data['likes'])
