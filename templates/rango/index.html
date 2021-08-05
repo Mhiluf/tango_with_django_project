@@ -1,49 +1,125 @@
 <!DOCTYPE html>
-
-{% load static %} <!-- New line-->
-
+{% load staticfiles %} <!-- New line -->
 <html>
-    <head>
-        <title>
-            Rango
-        </title>
-    </head>
-    <body>
-        <h1>Rango says...</h1>
-        <div>
-            hey there partner! <br />
-            <strong>{{ boldmessage }}</strong><br />
-        </div>
-        <div>
-            <h2>Most Viewed Pages</h2>
-            {% if pages %}
-                <ul>
-                {% for page in pages %}
-                    <li><a href="{{ page.url }}/">{{ page.title }}</a></li>
-                {% endfor %}    
-                </ul>
-            {% else %}
-                <strong>There are no Pages present</strong>
-            {% endif %}    
-            </div>
-        <div>
-            <h2>Most Liked Categories</h2>
-        {% if categories %}
-            <ul>
-            {% for category in categories %}
-                <li>
-                    <a href="/category/{{ category.slug }}/">{{ category.name }}</a></li>
-            {% endfor %}    
-            </ul>
-        {% else %}
-            <strong>There are no categories present</strong>
-        {% endif %}    
-        </div>
+	<head>
+		<title>Rango Cars</title>
 
-        <div>
-            <a href="/rango/add_category/">Add a New Category</a><br />
-            <a href="/rango/about/">About</a><br />
-            <img src ="{% static 'images/rango.png' %}" alt="Picture of Rango" /> <!-- New line-->
-        </div>
-    </body>
-</html>
+	<link rel="stylesheet" href="stylesheet.css">
+
+		<style>
+		
+
+		#authenticate {position:fixed;
+			padding-left:800px;}
+
+		#divInfo {position:fixed;
+			}
+
+			
+
+		.infobutton{width:100px;  color:black display:inline-block;float:left;}
+		
+
+		#submit{padding-top:1px;height:50px;width60px;text-align:center;}
+		
+		#search{position:sticky;padding-left:400px;padding-bottom:50px;}
+
+		#searcharea{height:50px;width:200px;}
+
+		#form{padding-left:200px}
+
+		.div1{ padding-top:50px;padding-left:100px;}
+
+		.div2{float:right;padding-top:50;padding-right:100px;}
+
+		
+		nav {height:300px}
+
+		main{background:url('C:\Users\BILLIONS\Downloads\sportcars.jpg')"}
+
+		a:hover{color:pink;}
+		a:visited{color:red;}
+		a:active{color:black;}
+		a{color:black; text-decoration:none}
+
+		</style>
+	</head>
+	<body>
+		<header>
+		</header>
+		
+		<nav>
+
+			<div id="divInfo">
+					<button class="infobutton" style="background-color:#33E6FF;"><a href="">About us</a></button>
+
+					<button class="infobutton"><a href="">Contact us</a></button>
+					
+				
+			</div>
+			
+
+			<div id="authenticate">
+			
+				<button class="login" style="background-color:#33E6FF;"><a href="">Login</a></button>
+				
+				<button class="signup"><a href="">Signup</a></button>
+			
+			</div>
+		</nav>
+		
+		<main>
+
+		<script>
+		function getIT(){
+		var carSearch=document.getElementById("submit");
+
+		for (carAvailable : cars){
+			if(carAvailable.equals(carSearch){
+			alert("Available; you can place your order below");
+
+			document.getElementById("paragraph1").innerHTML=carsearch;
+			}
+		}
+
+		}
+		</script>
+
+		<div id="search">
+		<form id="form">
+		<input type="text" id="searcharea"></input><button style="background-color:#33E6FF;" type="submit" id="submit" onclick=getIT()><a href="">Search</a></button>
+		</form>
+		</div>
+		<hr width:850px>
+		<hr width:850px>
+
+		
+		<div>
+
+		<div class="div1">
+		<a class="mostviewed">Most Viewed Manufacture
+		</a>
+		<form>
+		<iframe  src=""  name="iframe1" id="textarea1">
+		</iframe>
+		</form?
+		</div>
+
+		<div class="div2">
+		<a class="mostviewed">Recently Viewed 
+		</a>
+		<form>
+		<iframe src="" name="iframe2" id="textarea2" >
+		</iframe>
+		</form>
+
+		
+		</div>
+
+		</div>
+		
+		</main>
+		</body>
+		
+			
+		
