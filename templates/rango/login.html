@@ -1,19 +1,120 @@
 <!DOCTYPE html>
-{% extends 'rango/base.html' %}
-{% load static %}
 
-{% block title_block %}
-    Login
-{% endblock %}
+<html>
+	<head>
+		<title>login</title>
 
-{% block body_block %}
-<h1>Login to Drive It</h1>
-<form id="login_form" method="post" action="{% url 'login' %}">
-    {% csrf_token %}
-    Username: <input type="text" name="username" value="" size="50" />
-    <br />
-    Password: <input type="pasword" name="password" value="" size="50" />
-    <br />
-    <input type="submit" value="submit" />
-</form>
-{% endblock %}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<style>
+		
+		a{color:black; text-decoration:none}
+
+		
+		#authenticate {position:fixed; float:left; display:inline-block;
+				margin-left:1000px;margin-right:50px;}
+		
+		#divInfo {position:fixed; margin-right:100px;
+				float:right}
+
+		.cancel {margin-left:35%;margin-right: 20px;width:100px}
+
+		.signup {margin-left:20px;margin-right: 30%;width:100px}
+
+		.table{ width:400px;height:100px;margin-left: auto;
+ 			 margin-right: auto;}
+
+		.altSign{margin-left: auto;
+ 			 margin-right: auto;display:block; width:200px}
+
+		nav {height:100px}
+
+		main{margin-top:400px;padding-top:150px}
+		
+
+		</style>
+	</head>
+	<body>
+		<header>
+		</header>
+		
+		<nav>
+
+			<div id="divInfo">
+					
+
+					<button style="box-shadow:3px 3px black;"><a href="">About us</a></button>
+
+					<button style="box-shadow:3px 3px black;"><a href="">Contact us</a></button>
+					
+				
+			</div>
+			
+
+			
+		<main style="margin-top:10px;">
+				
+		
+			<div>
+
+				<form>
+
+					<table class="table">
+						<tr>
+							<td>
+								<label for="Username" >Username/Email</label>
+							</td>
+							<td>
+								<input type="text" id="Username" name="Name" style="opacity=0.2;color:grey;" value="Username/Email" required>
+							</td>
+						</tr>
+						
+						
+						<tr>
+							<td>
+								<label for="password">Password</label>
+							</td>
+							<td>
+								<input type="password" id="password" name="Password" required>
+							</td>
+						</tr>
+						
+					</table>
+				</form>
+
+
+			</div>
+		
+			<div style="margin-top:50px">
+					<input type="reset" style="margin-left:50%;box-shadow:3px 3px black;background-color:red;color:white">
+
+					<button class="Signup" style="box-shadow:3px 3px black;background-color:green;"><a href="">login</a></button>
+					
+					<p  style="margin-left:35%">New user? <a href="signup.html" style="color:red">Sign Up</a>
+					
+					<hr style="margin-left:35%;margin-right: 40%; margin-top:20px; height:1px; background-color: black">
+				
+			</div>
+
+			<div  >
+
+					<div >
+						<button class="altSign" style="margin-bottom:5px"><a href="https://accounts.google.com/ServiceLogin/webreauth?sacu=1&passive=1209600&acui=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+							
+							<i class="fa fa-google" aria-hidden="true" style="margin-right:5px;"></i>Sign Up with Google</a></button>
+					</div>
+
+					<div >
+						<button class="altSign" style="margin-top:5px"><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4tZ2IifQ%3D%3D%22%7D">
+							
+							<i class="fa fa-twitter" aria-hidden="true" style="margin-right:5px;"></i>Sign up with Twitter</a></button>
+					</div>
+					
+				
+			</div>
+
+		
+		</main>
+	</body>
+		
+			
+		
