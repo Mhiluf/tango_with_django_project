@@ -16,7 +16,9 @@
 		#divInfo {position:fixed; margin-left:100px;
 				}
 
+		.div1{float:left;margin-left:200px;}
 
+		.div2{float:right;margin-right:200px;}
 
 		nav {height:100px}
 
@@ -26,8 +28,9 @@
 
 		.SearchIcons2{margin-left:100px;}
 		
+		.table{height:200px}
 
-		#details{height:350px;width:95%;margin-left:2.5%;border-style:solid;border-width:2px 0px;border-color:black;}
+		#details{height:300px;width:95%;margin-left:2.5%;border-style:solid;border-width:2px 0px;border-color:black;padding-top:40px}
 
 	
 		
@@ -71,7 +74,126 @@
 
 			<div id="details">
 
-		
+			<div class="div1">
+
+				<form>
+
+					<table class="table">
+						<tr>
+							<td>
+								<label for="manufacturer2" >Manufacturer</label>
+							</td>
+							<td>
+								<input list="manufacturer1" id="manufacturer2" name="Manufacturer">
+								<datalist id="manufacturer1">
+								<option value="Toyota">
+								<option value="Ford">
+								<option value="Honda">
+								<option value="BMW">
+								<option value="Porsche">
+								<option value="Aston Martin">
+								<option value="Audi">
+								<option value="Jaguar">
+								<option value="Lexus">
+								<option value="MINI">
+								<option value="Mazda">
+								</datalist>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="modelYr" >Model Year</label>
+							</td>
+							<td>
+								<input type="number" min="1890" max="2021" value="2021" step="1" id="modelYr" name="Year">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="model1">Model</label>
+							</td>
+							<td>
+								<input list="model2" id="model1" name="Userame" >
+								<datalist id="model2">
+								<option value="Avalon">
+								<option value="Camaro">
+								<option value="Corvette">
+								<option value="Corolla">
+								<option value="Atlas">
+								<option value="Alpine A310">
+								<option value="Alfa Romoeo Alfasud">
+								<option value="Honda CR-V">
+								<option value="Toyota Corolla Cross">
+								<option value="AMC Gremlin">
+								<option value="Chevrolet Cruze">
+								</datalist>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="transmission1">Transmission</label>
+							</td>
+							<td>
+								<input list="transmission2" id="transmission1" name="Password" required>
+								<datalist id="transmission2">
+								<option value="Manual">
+								<option value="Automatic">
+								</datalist>
+							</td>
+						</tr>
+						
+					</table>
+				</form>
+
+
+			</div>
+			
+			<div class="div2">
+
+				<form>
+
+					<table class="table">
+						<tr>
+							<td>
+								<label for="comfort" >Comfort</label>
+							</td>
+							<td>
+								<input type="text" id="comfort" name="Comfort">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="value" >Value</label>
+							</td>
+							<td>
+								<input type="text" id="value" name="Value">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="function">Function</label>
+							</td>
+							<td>
+								<input type="text" id="function" name="Function">
+								
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="fuel">Fuel Efficiency</label>
+							</td>
+							<td>
+								<input type="text" id="fuel" name="Fuel">
+								
+							</td>
+						</tr>
+						
+					</table>
+				</form>
+
+
+			</div>	
+
 			</div>
 		
 
