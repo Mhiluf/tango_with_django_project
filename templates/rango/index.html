@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load staticfiles %} <!-- New line -->
+
 <html>
 	<head>
 		<title>Index</title>
@@ -8,39 +8,34 @@
 
 		<style>
 		
-						
+			a{text-decoration:none;}			
 
 			#authenticate {position:fixed; float:left; display:inline-block;
-				padding-left:1000px;padding-right:50px;}
+				margin-left:800px;margin-right:50px;}
 
-			#divInfo {position:fixed; padding-left:100px;
+			#divInfo {position:fixed; margin-left:100px;
 				}
-
-			
-
-			.infobutton{width:100px;  color:black display:inline-block;float:left;}
 		
 
 			#submit{padding-top:1px;height:50px;width60px;text-align:center;}
 		
-			#search{position:sticky;padding-left:400px;padding-bottom:50px;}
+		
 
 			#searcharea{height:50px;width:200px;}
 
-			#form{padding-left:200px}
-
-			.div1{ padding-top:50px;padding-left:100px;}
-
-			.div2{float:right;padding-top:50;padding-right:100px;}
-			.searchIcons1{float:left;padding-left:300px;}
-			.searchIcons2{float:left;padding-left:500px;}
-			.searchIcons3{float:right;padding-left:700px;}
-		
-			nav {height:300px}
-
-			main{}
-			
 			#driveIt{padding-left:50px;padding-top:100px}
+
+			#form{padding-left:200px}
+		
+			nav {height:100px}
+
+			main{style="margin-top:0px;"}
+
+			.div1{float:left;margin-left:200px;}
+
+			.div2{float:right;margin-right:200px;}
+			
+
 
 			
 
@@ -52,22 +47,17 @@
 		
 		<nav>
 
-			
 
 			<div id="divInfo">
-					<button class="infobutton" style="background-color:#33E6FF;text-color:blue;"><a href="">About us</a></button>
+					<button style="box-shadow:3px 3px black;background-color:#33E6FF;text-color:blue;"><a href="">About us</a></button>
 
-					<button class="infobutton"><a href="">Contact us</a></button>
-					
-				
-			</div>
-			
+					<button style="box-shadow:3px 3px black;"><a href="">Contact us</a></button>
 
 			<div id="authenticate">
 			
-				<button class="login" style="background-color:#33E6FF;"><a href="">Login</a></button>
+				<button style="box-shadow:3px 3px black;background-color:#33E6FF;"><a href="">Login</a></button>
 				
-				<button class="signup"><a href="">Signup</a></button><i class="fas fa-car-alt"></i>
+				<button style="box-shadow:3px 3px black;"><a href="">Signup</a></button><i class="fas fa-car-alt"></i>
 			
 			</div>
 
@@ -86,26 +76,24 @@
 							alert("Available; you can place your order below");
 
 							document.getElementById("paragraph1").innerHTML=carsearch;
+						}
 					}
+
 				}
-
-			}
-		</script>
+			</script>
 
 			
 
-			<div id="search">
-	
+			<h1 style="color:blue; margin-left:300px;font-size:65px;font-family:cursive;">Drive It!
+						
+				<i style="color:blue;font-size:40px;"class="fa fa-taxi"></i>
+		
+				
+					<input type="text" id="searcharea"></input><button style="background-color:#33E6FF;" type="submit" id="submit" onclick=getIT()><a href="Model.html">Car search</a></button>
 			
-				<div class="SearchIcons1"><h1 style="color:blue; font-size:65px;font-family:cursive;">Drive It</h1></div>
-				<div class="SearchIcons2"><i style="color:blue;font-size:40px;"class="fa fa-taxi"></i></div>
-
-				<div class="SearchIcons3">
-				<form id="form">
-					<input type="text" id="searcharea"></input><button style="background-color:#33E6FF;" type="submit" id="submit" onclick=getIT()><a href="">Search</a></button>
-				</form>
-				</div>
-			</div>
+			</h1>
+				
+			
 
 			
 			<div>
@@ -113,23 +101,23 @@
 				<hr width:850px>
 
 		
-				<div>
+				<div Style="margin-top:50px;">
 
 				<div class="div1">
-					<a class="mostviewed">Most Viewed Manufacture</a>
-		
-
+					
+				<div><a>Most Viewed Manufacture</a></div>
 					<form>
-						<iframe  src=""  name="iframe1" id="textarea1"></iframe>
-					</form?
+						<iframe src="" name="iframe2" id="textarea1" style="height:300px;"></iframe>
+					</form>
+					</div>
 				</div>
 
 		
 
 				<div class="div2">
-					<a class="mostviewed">Recently Viewed </a>
+					<div><a>Recently Viewed </a></div>
 					<form>
-						<iframe src="" name="iframe2" id="textarea2" ></iframe>
+						<iframe src="" name="iframe2" id="textarea2" style="height:300px;"></iframe>
 					</form>
 					</div>
 		

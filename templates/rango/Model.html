@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load staticfiles %} <!-- New line -->
+
 <html>
 	<head>
 		<title>Models</title>
@@ -7,27 +7,30 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<style>
 		
+		a{color:black; text-decoration:none}
 
-		#authenticate {position:fixed;
-			padding-left:800px;}
-
-		#divInfo {position:fixed;
-			}
-
-			
-
-		.infobutton{width:80px;  color:black; display:inline-block;float:left;padding-left:5px;padding-right:5px ;}
 		
-		nav {height:300px}
+		#authenticate {position:fixed; float:left; display:inline-block;
+				margin-left:1000px;margin-right:50px;}
+		
+		#divInfo {position:fixed; margin-left:100px;
+				}
 
-		main{}
+
+
+		nav {height:100px}
+
+		main{margin-top:200px;}
+
+		.SearchIcons1{margin-left:100px;}
+
+		.SearchIcons2{margin-left:100px;}
+		
 
 		#details{height:350px;width:95%;margin-left:2.5%;border-style:solid;border-width:2px 0px;border-color:black;}
 
-		a:hover{color:pink;}
-		a:visited{color:black;}
-		a:active{color:black;}
-		a{color:black; text-decoration:none}
+	
+		
 
 		</style>
 	</head>
@@ -38,9 +41,11 @@
 		<nav>
 
 			<div id="divInfo">
-					<button class="infobutton" style="background-color:#33E6FF;"><a href="">About us</a></button>
+					<button style="box-shadow:3px 3px black;background-color:#33E6FF;"><a href="Index.html">Home</a></button>
 
-					<button class="infobutton"><a href="">Contact us</a></button>
+					<button style="box-shadow:3px 3px black;"><a href="">About us</a></button>
+
+					<button style="box-shadow:3px 3px black;"><a href="">Contact us</a></button>
 					
 				
 			</div>
@@ -48,22 +53,21 @@
 
 			<div id="authenticate">
 
-				<button class="login" style="background-color:#33E6FF;"><a href="">My Account</a></button>
+				<button style="box-shadow:3px 3px black;background-color:#33E6FF;"><a href="">My Account</a></button>
 				
-				<button class="signup"><a href="">Logoutout</a></button>
+				<button style="box-shadow:3px 3px black;"><a href="">Logout</a></button>
 			
 			</div>
 		</nav>
 		
-		<main>
+		<main style="margin-top:0px;">
+			
+			<h1 style="color:blue; margin-left:450px;font-size:65px;font-family:cursive;">Drive It!
+						
+						<i style="color:blue;font-size:40px;"class="fa fa-taxi"></i></h1>
+					
 
-			<div class="SearchIcons1"><h1 style="color:blue; font-size:65px;font-family:cursive;">Drive It</h1></div>
-				
-			<div class="SearchIcons2"><i style="color:blue;font-size:40px;"class="fa fa-taxi"></i></div>
-
-				
-
-				<h2>Reveal a Car Model</>
+			<div style="margin-top:0px;margin-left:70px;"><h2>Reveal a Car Model</></div>
 
 			<div id="details">
 
