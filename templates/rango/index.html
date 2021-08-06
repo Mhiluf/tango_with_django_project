@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+{% load static %}
+{% load rango_template_tags %}
 
 <html>
 	<head>
@@ -49,13 +51,13 @@
 
 
 			<div id="divInfo">
-					<button style="box-shadow:3px 3px black;background-color:#33E6FF;text-color:blue;"><a href="">About us</a></button>
+					<button style="box-shadow:3px 3px black;background-color:#33E6FF;text-color:blue;"><a href="{% url 'about' %}">About us</a></button>
 
 					<button style="box-shadow:3px 3px black;"><a href="">Contact us</a></button>
 
 			<div id="authenticate">
 			
-				<button style="box-shadow:3px 3px black;background-color:#33E6FF;"><a href="">Login</a></button>
+				<button style="box-shadow:3px 3px black;background-color:#33E6FF;"><a href="{% url 'login' %}">Login</a></button>
 				
 				<button style="box-shadow:3px 3px black;"><a href="">Signup</a></button><i class="fas fa-car-alt"></i>
 			
@@ -71,7 +73,7 @@
 				function getIT(){
 					var carSearch=document.getElementById("submit");
 
-					for (carAvailable : cars){
+					for (carAvailable:cars){
 						if(carAvailable.equals(carSearch){
 							alert("Available; you can place your order below");
 
