@@ -137,7 +137,7 @@ def user_login(request):
         if user:
             if user.is_active:
                 login(request, user)
-                return redirect(reverse('rango/index.html'))
+                return redirect('index')
             else:
                 return HttpResponse("Your Drive It Account is disabled.")
         else: 
