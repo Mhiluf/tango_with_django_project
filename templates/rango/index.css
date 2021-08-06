@@ -1,0 +1,57 @@
+	a{text-decoration:none;}			
+
+#authenticate {
+    position:fixed;
+    float: left; 
+    display:inline-block;
+    margin-left:800px;
+    margin-right:50px;
+}
+
+#divInfo {
+    position:fixed; 
+    margin-left:100px;
+	}
+		
+
+#submit{
+    padding-top:1px;
+    height:50px;
+    width:60px;
+    text-align:center;
+}
+
+#searcharea{
+    height:50px;
+    width:200px;
+}
+
+#driveIt{
+    padding-left:50px;
+    padding-top:100px
+}
+
+#form{
+    padding-left:200px
+}
+
+nav {
+    height:100px
+}
+
+main{
+    margin-top:0px;
+}
+
+.div1{
+    float:left;
+     margin-left:'200px';
+    }
+
+.div2{float:right;
+    margin-right:200px;
+}
+			
+
+
+			

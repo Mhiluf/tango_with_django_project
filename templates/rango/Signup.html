@@ -41,12 +41,9 @@
 		<nav>
 
 			<div id="divInfo">
-					<button style="box-shadow:3px 3px black;background-color:#33E6FF;"><a href="Index.html">Home</a></button>
+					<button style="box-shadow:3px 3px black;background-color:#33E6FF;"><a href="{% url 'index' %}">Home</a></button>
 
-					<button style="box-shadow:3px 3px black;"><a href="">About us</a></button>
-
-					<button style="box-shadow:3px 3px black;"><a href="">Contact us</a></button>
-					
+					<button style="box-shadow:3px 3px black;"><a href="{% url 'about' %}">About us</a></button>			
 				
 			</div>
 			
@@ -57,10 +54,7 @@
 			<h1 style="color:blue; margin-left:450px;font-size:65px;font-family:cursive;">Drive It
 						
 						<i style="color:blue;font-size:40px;"class="fa fa-taxi"></i></h1>
-					
-
-			
-		
+							
 			<div>
 
 				<form>
@@ -113,11 +107,11 @@
 			</div>
 		
 			<div>
-					<Button class="cancel" style="box-shadow:3px 3px black;background-color:red;color:white"><a href="">Cancel</a></button>
+					<Button class="cancel" style="box-shadow:3px 3px black;background-color:red;color:white"><a href="{% url 'index' %}">Cancel</a></button>
 
 					<button class="Signup" style="box-shadow:3px 3px black;background-color:green;"><a href="">Sign Up</a></button>
 
-					<p  style="margin-left:35%">Already a user? <a href="login.html" style="color:red">Sign In</a>
+					<p  style="margin-left:35%">Already a user? <a href="{% url 'login' %}" style="color:red">Sign In</a>
 					
 					<hr style="margin-left:35%;margin-right: 40%; margin-top:20px; height:1px; background-color: black">
 				

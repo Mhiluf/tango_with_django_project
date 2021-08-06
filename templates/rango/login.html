@@ -42,9 +42,9 @@
 			<div id="divInfo">
 					
 
-					<button style="box-shadow:3px 3px black;"><a href="">About us</a></button>
+					<button style="box-shadow:3px 3px black;"><a href="/">Home</a></button>
 
-					<button style="box-shadow:3px 3px black;"><a href="">Contact us</a></button>
+					<button style="box-shadow:3px 3px black;"><a href="{% url 'login' %}">Login</a></button>
 					
 				
 			</div>
@@ -89,7 +89,7 @@
 
 					<button class="Signup" style="box-shadow:3px 3px black;background-color:green;"><a href="">login</a></button>
 					
-					<p  style="margin-left:35%">New user? <a href="signup.html" style="color:red">Sign Up</a>
+					<p  style="margin-left:35%">New user? <a href="{% url 'register' %}" style="color:red">Sign Up</a>
 					
 					<hr style="margin-left:35%;margin-right: 40%; margin-top:20px; height:1px; background-color: black">
 				

@@ -8,40 +8,8 @@
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-		<style>
-		
-			a{text-decoration:none;}			
+		<link rel="stylesheet" href="css/index.css">
 
-			#authenticate {position:fixed; float:left; display:inline-block;
-				margin-left:800px;margin-right:50px;}
-
-			#divInfo {position:fixed; margin-left:100px;
-				}
-		
-
-			#submit{padding-top:1px;height:50px;width60px;text-align:center;}
-		
-		
-
-			#searcharea{height:50px;width:200px;}
-
-			#driveIt{padding-left:50px;padding-top:100px}
-
-			#form{padding-left:200px}
-		
-			nav {height:100px}
-
-			main{style="margin-top:0px;"}
-
-			.div1{float:left;margin-left:200px;}
-
-			.div2{float:right;margin-right:200px;}
-			
-
-
-			
-
-		</style>
 	</head>
 	<body>
 		<header>
@@ -51,9 +19,6 @@
 
 
 			<div id="divInfo">
-					<button style="box-shadow:3px 3px black;background-color:#33E6FF;text-color:blue;"><a href="{% url 'about' %}">About us</a></button>
-
-					<button style="box-shadow:3px 3px black;"><a href="">Contact us</a></button>
 
 			<div id="authenticate">
 			
@@ -66,7 +31,6 @@
 			<marquee direction="left" style="margin-left:100px;margin-right:100px"><p style="font-size:50px;color:purple">Welcome to our page</p></marquee>
 
 		</nav>
-		
 		<main>
 
 			<script>
@@ -92,7 +56,7 @@
 				<i style="color:blue;font-size:40px;"class="fa fa-taxi"></i>
 		
 				
-					<input type="text" id="searcharea"></input><button style="background-color:green;" type="submit" id="submit" onclick=getIT()><a href="Model.html">Car search</a></button>
+					<input type="text" id="searcharea"></input><button style="background-color:green;" type="submit" id="submit"><a href="{% url 'search' %}">Car search</a></button>
 			
 			</h1>
 				
@@ -100,8 +64,8 @@
 
 			
 			<div>
-				<hr width:850px>
-				<hr width:850px>
+				<hr width:850px />
+				<hr width:850px />
 
 		
 				<div Style="margin-top:50px;">
