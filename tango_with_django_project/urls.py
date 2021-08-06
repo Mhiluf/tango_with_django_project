@@ -25,8 +25,12 @@ app_name = 'rango'
 urlpatterns = [
     path('',views.index, name='index'),
     path('rango/about/',views.about, name='about'),
-    path('rango/category/<slug:category_name_slug>/',views.show_category, name='show_category'),
+    path('category/<slug:category_name_slug>/',views.show_category, name='show_category'),
     path('rango/add_category/', views.add_category, name='add_category'),
-    path('rango/category/<slug:category_name_slug>/add_page/',views.add_page, name='add_page'),
+    path('category/<slug:category_name_slug>/add_page/',views.add_page, name='add_page'),
+    path('login/', views.user_login, name='login'),
+    path('register/', views.register, name='register'),
+    path('restricted/', views.restricted, name='restricted'),
+    path('logout/', views.user_logout, name='logout'),
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
