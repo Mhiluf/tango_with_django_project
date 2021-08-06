@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 {% load static %}
 {% load rango_template_tags %}
@@ -133,3 +134,54 @@
 		
 </html>		
 		
+=======
+<!DOCTYPE html>
+
+{% load static %} <!-- New line-->
+
+<html>
+    <head>
+        <title>
+            Rango
+        </title>
+    </head>
+    <body>
+        <h1>Rango says...</h1>
+        <div>
+            hey there partner! <br />
+            <strong>{{ boldmessage }}</strong><br />
+        </div>
+        <div>
+            <h2>Most Viewed Pages</h2>
+            {% if pages %}
+                <ul>
+                {% for page in pages %}
+                    <li><a href="{{ page.url }}/">{{ page.title }}</a></li>
+                {% endfor %}    
+                </ul>
+            {% else %}
+                <strong>There are no Pages present</strong>
+            {% endif %}    
+            </div>
+        <div>
+            <h2>Most Liked Categories</h2>
+        {% if categories %}
+            <ul>
+            {% for category in categories %}
+                <li>
+                    <a href="/category/{{ category.slug }}/">{{ category.name }}</a></li>
+            {% endfor %}    
+            </ul>
+        {% else %}
+            <strong>There are no categories present</strong>
+        {% endif %}    
+        </div>
+
+        <div>
+            <a href="/rango/add_category/">Add a New Category</a><br />
+            <a href="{% url 'about' %}">About</a><br />
+            <img src ="{% static 'images/rango.png' %}" alt="Picture of Rango" /> <!-- New line-->
+        </div>
+    </body>
+</html>
+>>>>>>> origin/Michael
