@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Rango</title>
+        <title>Drive It!</title>
     </head>
     <body>
-        <h1>Add a Page</h1>
+        <h1>Add a Car</h1>
         <div>
             <form id="category_form" method="post" action="/rango/category/{{ category.slug }}/add_page/">
-                {% csrf_token %}
-                {% for hidden in form.hidden_fields %}
-                    {{ hidden }}
-                {% endfor %}
-                {% for field in form.visible_fields %}
-                    {{ field.errors }}
-                    {{ field.help_text }}
-                    {{ field }}
-                {% endfor %}
+                <label for="model">Model:</label><br>
+                <input type="text" id="model" name="model"><br>
+
+                <label for="manufacturer">Manufacturer</label><br>
+                <input type="text" id="manufacturer" name="manufacturer">
+
+                <label for="myear">Model Year:</label><br>
+                <input type="text" id="myear" name="myear">
+
+                <label for="colour">Colour:</label><br>
+                <input type="text" id="colour" name="colour">
+
+                <label for="mile">Mileage:</label><br>
+                <input type="text" id="mile" name="mile">
+
+                <label for="registration">1st Registation:</label><br>
+                <input type="text" id="registration" name="registration">
+
+                <label for="transmission">Transmission:</label><br>
+                <input type="text" id="transmission" name="transmission">
+
+                <label for="bstyle">Body style:</label><br>
+                <input type="text" id="bstyle" name="bstyle">
+
+                <label for="power">Power:</label><br>
+                <input type="text" id="power" name="power">
+
+                <label for="capacity">Capacity:</label><br>
+                <input type="text" id="capacity" name="capacity">
+
+                <label for="price">Price:</label><br>
+                <input type="text" id="price" name="price">
+ 
+                <p>Click on the "Choose File" button to upload a file:</p>
+                <input type="file" id="myFile" name="filename">
+
                 <input type="submit" name="submit" value="Create Page" />
             </form>
         </div>

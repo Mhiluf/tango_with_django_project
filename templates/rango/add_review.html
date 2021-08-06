@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Review</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Review</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <h2>Rating</h2>
+		<p>Choose a rating for the product:</p>
+			<form>
+ 				<input type="radio" id="one" name="Rating" value="One">
+  				<label for="one">1</label><br>
+  				<input type="radio" id="two" name="Rating" value="Two">
+  				<label for="two">2</label><br>
+  				<input type="radio" id="three" name="Rating" value="Three">
+  				<label for="three">3</label><br>
+  				<input type="radio" id="four" name="Rating" value="Four">
+  				<label for="four">4</label><br>
+  				<input type="radio" id="five" name="Rating" value="Five">
+  				<label for="five">5</label> 
+			</form> 
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Leave a review</h1>
+    <label for="pname">Product name:</label><br>
+ 	<input type="text" id="pname" name="pname"><br>
+    
+  	<label for="preview">Review of Product:</label>
+	<textarea id="preview" name="preview" rows="4" cols="50">
+  
+  </textarea>
+  <br><br>
+    
+  	<input type="submit" value="Submit">
+  </article>
+</section>
+</body>
+</html>
